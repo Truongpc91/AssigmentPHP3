@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        /* General styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .invoice-details,
+        .customer-details {
+            margin-bottom: 20px;
+        }
+
+        .customer-details p,
+        .invoice-details p {
+            margin: 5px 0;
+        }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .invoice-table th,
+        .invoice-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .invoice-table th {
+            background-color: #f4f4f4;
+        }
+
+        .total {
+            text-align: right;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .invoice-table th,
+            .invoice-table td {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tiêu đề</h1>
+        </div>
+        <div class="content">
+            <div class="invoice-details">
+                <p><strong>Invoice Number:</strong> #12345</p>
+                <p><strong>Invoice Date:</strong> July 31, 2024</p>
+                <p><strong>Due Date:</strong> August 15, 2024</p>
+            </div>
+            <div class="customer-details">
+                <p><strong>Billed To:</strong></p>
+                <p>Customer Name</p>
+                <p>Customer Address Line 1</p>
+                <p>Customer Address Line 2</p>
+                <p>Customer City, State, ZIP Code</p>
+            </div>
+            <table class="invoice-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item 1</td>
+                        <td>2</td>
+                        <td>$50.00</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Item 2</td>
+                        <td>1</td>
+                        <td>$150.00</td>
+                        <td>$150.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="total">Total</td>
+                        <td>$275.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <p>If you have any questions about this invoice, please contact our billing department at <a href="mailto:billing@example.com">billing@example.com</a>.</p>
+        </div>
+        <div class="footer">
+            <p>&copy; Cảm ơn đã đặt hàng</p>
+        </div>
+    </div>
+</body>
+
+</html>
